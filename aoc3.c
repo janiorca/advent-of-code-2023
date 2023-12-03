@@ -29,7 +29,6 @@ bool is_touching_symbol( int x, int y) {
 
 int main()
 {
-//    FILE *fp = fopen( "test_input.txt", "r");
     FILE *fp = fopen( "input3.txt", "r");
     char line[256];
     
@@ -82,9 +81,6 @@ int main()
                 // Found gear, find any touching numbers
                 int num_touching = 0;
                 int ratio = 1;
-                if( x == 23 && y == 5 ) {
-                    int t =0;
-                }
                 for( int n_box=0; n_box<num_number_boxes; n_box++ ) {
                     if( number_boxes[ n_box].x -1 <= x && number_boxes[ n_box].y -1 <=y &&
                         (number_boxes[ n_box].x + number_boxes[ n_box].width)>= x && number_boxes[ n_box].y >=y ) {
@@ -96,7 +92,5 @@ int main()
             }
         }
     }
-
     printf( "\nSum of gear ratios: %d", sum_of_gear_ratios);
-    int t = 0;
 }
