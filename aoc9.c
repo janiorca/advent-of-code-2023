@@ -44,6 +44,6 @@ int main() {
         front_extrapolated_sum  += new_value;
 
     }
-    printf( "Part1 %d\n", extrapolated_sum);    //1901217887
-    printf( "Part2 %d\n", front_extrapolated_sum);    //1901217887
+    printf( "Part1 %d\n", extrapolated_sum);
+    printf( "Part2 %d\n", front_extrapolated_sum);
 }
