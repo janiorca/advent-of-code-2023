@@ -70,7 +70,6 @@ int evaluate_ray( RayPos initial_ray, int width, int height  ) {
         for( int x=0;x<width; x++ ) {
             if( visited[y][x] != 0 ) {
                 total += 1;
-            }else {
             }
         }
     }
